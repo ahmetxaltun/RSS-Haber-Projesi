@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --red: #E62C32;
+    --red_hover: #D14836;
+    --black: #0c0f12;
+    --bg: #12161C;
+    --white: #FFF;
+    --card_bg: #181E25;
+    --card_bg_hover: rgba(255, 255, 255, .07);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+*::selection{
+    background: var(--red);
+    color: var(--white);
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background: var(--card_bg);
+}
+
+*::-webkit-scrollbar-thumb:hover{
+    background: var(--card_bg_hover);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+    color: var(--white);
+}
+
+a{
+    text-decoration: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+img{
+    object-fit: cover;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
